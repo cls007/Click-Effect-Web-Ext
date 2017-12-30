@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Click Effect",
+    "version": "1.1",
+
+    "description": "This Web-Ext will add an click effect to you browser.",
+    "homepage_url": "https://github.com/Lxio/Click-Effect-Web-Ext",
+    "icons": {
+        "96": "icons/icon1-96.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "https://*/*",
+        "http://*/*"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/icon2-96.png",
+        "default_title": "Click Effect",
+        "default_popup": "popup/popup.html"
+    },
+
+    "background": {
+        "scripts": ["background_script/background_script.js"]
+    },
+
+    "web_accessible_resources": [
+        "icons/icon1-96.png",
+        "icons/icon2-96.png"
+    ]
+}
